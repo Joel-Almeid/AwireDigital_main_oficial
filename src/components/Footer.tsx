@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
 import { NavLink } from "./NavLink";
 import logoAwire from "@/assets/logo-awire.png";
+import logoIFTO from "@/assets/logo-ifto.png";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <img src={logoAwire} alt="AWIRE Digital" className="h-16 mb-4" />
+            <img src={logoAwire} alt="AWIRE Digital" className="h-24 w-auto" />
             <h3 className="font-bold text-lg mb-2">PROJETO AWIRE DIGITAL</h3>
             <p className="text-sm text-muted-foreground">Inclusão Digital na Ilha do Bananal</p>
           </div>
@@ -25,30 +26,31 @@ const Footer = () => {
               <a href="/#arte" className="block hover:text-accent transition-colors">
                 Arte Indígena
               </a>
-              <NavLink to="/fotos" className="block hover:text-accent transition-colors">
-                Fotos
-              </NavLink>
-              <NavLink to="/artesanato" className="block hover:text-accent transition-colors">
-                Artesanato
-              </NavLink>
-            </nav>
+              <a href="/fotos" className="block hover:text-accent transition-colors"> {/* <-- CORRIGIDO AQUI */}
+                Fotos
+              </a>
+              <a href="/artesanato" className="block hover:text-accent transition-colors"> {/* <-- CORRIGIDO AQUI */}
+                Artesanato
+              </a>
+            </nav>
           </div>
 
           <div>
             <h4 className="font-semibold mb-4 text-accent">Instituições</h4>
-            <nav className="space-y-2 text-sm">
-              <a
-                href="https://www.ifto.edu.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block hover:text-accent transition-colors"
-              >
-                IFTO
-              </a>
-              <p className="text-muted-foreground">FUNAI</p>
-              <p className="text-muted-foreground">Secretaria de Cultura</p>
-            </nav>
-          </div>
+  <nav className="space-y-2 text-sm">
+    {/* O link agora "envolve" a imagem */}
+    <a
+      href="https://www.ifto.edu.br/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block hover:opacity-80 transition-opacity" 
+    >
+      {/* A nova imagem do logo (ajuste o 'w-24' se ficar muito grande/pequeno) */}
+      <img src={logoIFTO} alt="Logo IFTO" className="w-24" />    </a>
+    <p className="text-muted-foreground">FUNAI</p>
+    <p className="text-muted-foreground">Secretaria de Cultura</p>
+  </nav>
+</div>
 
           <div>
             <h4 className="font-semibold mb-4 text-accent">Redes Sociais</h4>
@@ -73,7 +75,7 @@ const Footer = () => {
           <p>© 2025 AWIRE DIGITAL - Todos os direitos reservados</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <NavLink to="/login" className="hover:text-accent transition-colors">
-              Login Admin
+              Login
             </NavLink>
             <a href="#" className="hover:text-accent transition-colors">
               Termos de Uso

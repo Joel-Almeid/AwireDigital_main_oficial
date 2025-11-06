@@ -19,25 +19,30 @@ const Header = () => {
           </NavLink>
 
           <nav className="hidden md:flex items-center gap-8">
-            <NavLink to="/#sobre" className="text-foreground hover:text-accent transition-colors">
-              Sobre
-            </NavLink>
-            <NavLink to="/#participantes" className="text-foreground hover:text-accent transition-colors">
-              Participantes
-            </NavLink>
-            <NavLink to="/#arte" className="text-foreground hover:text-accent transition-colors">
-              Arte Indígena
-            </NavLink>
-            <NavLink to="/#fotos" className="text-foreground hover:text-accent transition-colors">
-              Fotos
-            </NavLink>
-            <NavLink to="/artesanato" className="text-foreground hover:text-accent transition-colors">
-              Artesanato
-            </NavLink>
-            <NavLink to="/#contato" className="text-foreground hover:text-accent transition-colors">
-              Contato
-            </NavLink>
-          </nav>
+  {/* Links de âncora (use <a>) */}
+  <a href="/#sobre" className="text-foreground hover:text-accent transition-colors">
+    Sobre
+  </a>
+  <a href="/#participantes" className="text-foreground hover:text-accent transition-colors">
+    Participantes
+  </a>
+  <a href="/#arte" className="text-foreground hover:text-accent transition-colors">
+    Arte Indígena
+  </a>
+
+  {/* Links de página (use <NavLink>) */}
+  <NavLink to="/fotos" className="text-foreground hover:text-accent transition-colors"> {/* <-- CORRIGIDO AQUI */}
+    Fotos
+  </NavLink>
+  <NavLink to="/artesanato" className="text-foreground hover:text-accent transition-colors">
+    Artesanato
+  </NavLink>
+
+  {/* Link de âncora (use <a>) */}
+  <a href="/#contato" className="text-foreground hover:text-accent transition-colors">
+    Contato
+  </a>
+</nav>
 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -49,48 +54,53 @@ const Header = () => {
 
         {isMenuOpen && (
           <nav className="md:hidden pb-4 space-y-4">
-            <NavLink
-              to="/#sobre"
-              className="block text-foreground hover:text-accent transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Sobre
-            </NavLink>
-            <NavLink
-              to="/#participantes"
-              className="block text-foreground hover:text-accent transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Participantes
-            </NavLink>
-            <NavLink
-              to="/#arte"
-              className="block text-foreground hover:text-accent transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Arte Indígena
-            </NavLink>
-            <NavLink
-              to="/#fotos"
-              className="block text-foreground hover:text-accent transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Fotos
-            </NavLink>
-            <NavLink
-              to="/artesanato"
-              className="block text-foreground hover:text-accent transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Artesanato
-            </NavLink>
-            <NavLink
-              to="/#contato"
-              className="block text-foreground hover:text-accent transition-colors"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contato
-            </NavLink>
+  {/* Links de âncora (use <a>) */}
+  <a
+    href="/#sobre"
+    className="block text-foreground hover:text-accent transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Sobre
+  </a>
+  <a
+    href="/#participantes"
+    className="block text-foreground hover:text-accent transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Participantes
+  </a>
+  <a
+    href="/#arte"
+    className="block text-foreground hover:text-accent transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Arte Indígena
+  </a>
+
+  {/* Links de página (use <NavLink>) */}
+  <NavLink
+    to="/fotos"  /* <-- CORRIGIDO AQUI */
+    className="block text-foreground hover:text-accent transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Fotos
+  </NavLink>
+  <NavLink
+    to="/artesanato"
+    className="block text-foreground hover:text-accent transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Artesanato
+  </NavLink>
+
+  {/* Link de âncora (use <a>) */}
+  <a
+    href="/#contato"
+    className="block text-foreground hover:text-accent transition-colors"
+    onClick={() => setIsMenuOpen(false)}
+  >
+    Contato
+  </a>
           </nav>
         )}
       </div>

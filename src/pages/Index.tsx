@@ -134,7 +134,7 @@ const Index = () => {
             <div className="bg-card border border-border rounded-lg p-8">
               <h3 className="text-2xl font-bold mb-4 text-accent">O que é o AWIRE DIGITAL</h3>
               <p className="leading-relaxed">
-                Um projeto de extensão do Instituto Federal do Tocantins (IFTO) que promove a inclusão digital nas
+                Um projeto de extensão do Instituto Federal do Tocantins Campus Formoso do Araguaia (IFTO) que promove a inclusão digital nas
                 comunidades indígenas da Ilha do Bananal, valorizando a cultura local e fortalecendo a identidade
                 indígena.
               </p>
@@ -176,15 +176,7 @@ const Index = () => {
 {/* COLE ESTE CÓDIGO NO LUGAR DO IFRAME ANTIGO (linhas 202-209)
 */}
 
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998468.322527506!2d-51.1578125895781!3d-10.93282928574161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b06323c28a55b%3A0xe3f5e3810f22f281!2sIlha%20do%20Bananal%20-%20TO!5e0!3m2!1spt-BR!2sbr!4v1678886400000!5m2!1spt-BR!2sbr" 
-  width="100%" 
-  height="450" 
-  style={{ border: 0 }} 
-  allowFullScreen
-  loading="lazy" 
-  referrerPolicy="no-referrer-when-downgrade"
-></iframe> 
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1LKFZClgTbH7Ggk-npAOm8Ao6nkP9yPM&ehbc=2E312F" width="640" height="480"></iframe> 
         </div>
         </div>
       </section>
@@ -284,6 +276,19 @@ const Index = () => {
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-16 h-16 rounded-full bg-secondary flex-shrink-0"></div>
                 <div>
+                  <h4 className="font-bold text-lg">Adriano Ribeiro Silva</h4>
+                  <p className="text-sm text-accent">Coordenador e idealizador do Projeto</p>
+                </div>
+              </div>
+              <p className="italic text-lg leading-relaxed">
+                "Ver a transformação digital chegando na aldeia é a realização de um sonho. Estamos conectando tradição
+                e futuro."
+              </p>
+            </div>
+            <div className="bg-card border border-border rounded-lg p-8">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-16 h-16 rounded-full bg-secondary flex-shrink-0"></div>
+                <div>
                   <h4 className="font-bold text-lg">Juma Karajá</h4>
                   <p className="text-sm text-accent">Artesã e Bolsista</p>
                 </div>
@@ -291,19 +296,6 @@ const Index = () => {
               <p className="italic text-lg leading-relaxed">
                 "O Awire Digital me ajudou a mostrar minha arte para o mundo. Antes eu não sabia usar o computador,
                 agora eu converso com clientes de outros estados."
-              </p>
-            </div>
-            <div className="bg-card border border-border rounded-lg p-8">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-16 h-16 rounded-full bg-secondary flex-shrink-0"></div>
-                <div>
-                  <h4 className="font-bold text-lg">Adriano Ribeiro Silva</h4>
-                  <p className="text-sm text-accent">Coordenador</p>
-                </div>
-              </div>
-              <p className="italic text-lg leading-relaxed">
-                "Ver a transformação digital chegando na aldeia é a realização de um sonho. Estamos conectando tradição
-                e futuro."
               </p>
             </div>
           </div>
@@ -353,7 +345,7 @@ const Index = () => {
                 <Clock className="text-accent flex-shrink-0 mt-1" size={24} />
                 <div>
                   <h3 className="font-semibold mb-1">Horário de Atendimento</h3>
-                  <p className="text-muted-foreground">8h às 12h - 14h às 18h</p>
+                  <p className="text-muted-foreground">Seg a Sexta 🕘8h às 12h - 🕒14h às 18h</p>
                 </div>
               </div>
             </div>
