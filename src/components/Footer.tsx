@@ -16,15 +16,15 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4 text-accent">Links Rápidos</h4>
             <nav className="space-y-2 text-sm">
-              <NavLink to="/#sobre" className="block hover:text-accent transition-colors">
-                Sobre
-              </NavLink>
-              <NavLink to="/#participantes" className="block hover:text-accent transition-colors">
-                Participantes
-              </NavLink>
-              <NavLink to="/#arte" className="block hover:text-accent transition-colors">
-                Arte Indígena
-              </NavLink>
+              <a href="/#sobre" className="block hover:text-accent transition-colors">
+                Sobre
+              </a>
+              <a href="/#participantes" className="block hover:text-accent transition-colors">
+                Participantes
+              </a>
+              <a href="/#arte" className="block hover:text-accent transition-colors">
+                Arte Indígena
+              </a>
               <NavLink to="/fotos" className="block hover:text-accent transition-colors">
                 Fotos
               </NavLink>
