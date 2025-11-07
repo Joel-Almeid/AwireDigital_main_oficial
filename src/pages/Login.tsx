@@ -30,7 +30,8 @@ const Login = () => {
 
       // SUCESSO! Redireciona para o seu Painel de Admin
       // !!! MUDE A LINHA ABAIXO PARA O LINK DO SEU PAINEL !!!
-      window.location.href = "https://SEU-PAINEL-ADMIN.COM";
+// A LINHA CORRIGIDA (PARA TESTAR)
+window.location.href = "https://adminpaine.netlify.app";
 
     } catch (err) {
       // FALHA! Avisa o usuário
